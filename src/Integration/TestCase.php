@@ -3,7 +3,7 @@
 namespace Skywire\TestFramework\Integration;
 
 class TestCase
-    extends \PHPUnit_Framework_TestCase
+    extends \PHPUnit\Framework\TestCase
 {
     /**
      * @var \Magento\TestFramework\ObjectManager
