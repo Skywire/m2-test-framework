@@ -31,7 +31,7 @@ use Magento\Framework\TestFramework\Unit\Helper\ObjectManager;
  * @link      http://skywire.co.uk
  */
 class TestCase
-    extends \PHPUnit_Framework_TestCase
+    extends \PHPUnit\Framework\TestCase
 {
     /** @var ObjectManager */
     protected $objectManager;
