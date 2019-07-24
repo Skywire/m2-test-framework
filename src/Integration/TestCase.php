@@ -1,7 +1,15 @@
 <?php
+/**
+ * Copyright © Skywire Ltd. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
 
 namespace Skywire\TestFramework\Integration;
 
+/**
+ * @package     Skywire\TestFramework\Integration
+ * @author      Skywire Tech Team <tech@skywire.co.uk>
+ */
 class TestCase
     extends \PHPUnit\Framework\TestCase
 {
