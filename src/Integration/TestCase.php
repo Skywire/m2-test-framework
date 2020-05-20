@@ -18,11 +18,21 @@ class TestCase
      */
     protected $objectManager;
 
-    public function __construct($name = null, array $data = array(), $dataName = '')
+    /**
+     * @var FixtureLoader
+     */
+    protected static $fixtureLoader;
+
+    public function __construct($name = null, array $data = [], $dataName = '')
     {
         $this->objectManager = \Magento\TestFramework\Helper\Bootstrap::getObjectManager();
+        self::$fixtureLoader = $this->objectManager->create(FixtureLoader::class);
 
         parent::__construct($name, $data, $dataName);
     }
 
+    protected static function loadFixtureFile($filename)
+    {
+        self::$fixtureLoader->load($filename);
+    }
 }

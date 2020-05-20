@@ -1,15 +1,16 @@
 {
-  "name": "skywire/testframework",
-  "description": "",
-  "require": {
-    "php": "~7.0.0|~7.1.0|~7.2.0|~7.3.0",
-    "magento/magento-composer-installer": "*"
-  },
-  "license": [
-  ],
-  "autoload": {
-    "psr-4": {
-      "Skywire\\TestFramework\\": "src"
+    "name": "skywire/testframework",
+    "description": "",
+    "require": {
+        "php": "~7.0.0|~7.1.0|~7.2.0|~7.3.0",
+        "magento/magento-composer-installer": "*",
+        "symfony/yaml": "*"
+    },
+    "license": [
+    ],
+    "autoload": {
+        "psr-4": {
+            "Skywire\\TestFramework\\": "src"
+        }
     }
-  }
 }
