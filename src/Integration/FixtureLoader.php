@@ -68,7 +68,7 @@ class FixtureLoader
                 $model = $factory->create();
                 $model->isObjectNew(true);
                 $model->setData($record);
-                if ($record['id']) {
+                if (isset($record['id'])) {
                     $model->setId($record['id']);
                 }
                 if ($repository) {
